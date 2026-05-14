@@ -1,0 +1,491 @@
+:root {
+    --bg-main: #f8fafc;
+    /* Professional Light Blue/Grey */
+    --accent: #6366f1;
+    /* Primary Indigo */
+    --accent-gradient: linear-gradient(90deg, #6366f1, #a855f7);
+    --card-bg: #ffffff;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--bg-main);
+    color: #1e293b;
+    scroll-behavior: smooth;
+    margin: 0;
+}
+
+/* Navbar */
+.navbar {
+    background: rgba(248, 250, 252, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 20px 0;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: #475569 !important;
+    margin: 0 10px;
+}
+
+.btn-hire {
+    background: var(--accent-gradient);
+    color: white;
+    border: none;
+    padding: 8px 25px;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+/* Hero */
+.hero-section {
+    padding: 180px 0 100px;
+}
+
+.availability-tag {
+    background: white;
+    padding: 6px 15px;
+    border-radius: 50px;
+    display: inline-block;
+    font-size: 14px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background: #22c55e;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.hero-title {
+    font-size: 4.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.text-gradient {
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    color: #64748b;
+}
+
+.hero-text {
+    font-size: 1.1rem;
+    color: #64748b;
+    max-width: 90%;
+    margin-top: 25px;
+}
+
+.btn-view {
+    background: var(--accent-gradient);
+    color: white;
+    text-decoration: none;
+    padding: 15px 35px;
+    border-radius: 12px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.btn-contact {
+    border: 1px solid #cbd5e1;
+    color: #1e293b;
+    text-decoration: none;
+    padding: 15px 35px;
+    border-radius: 12px;
+    font-weight: 600;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.hero-socials a {
+    font-size: 24px;
+    color: #94a3b8;
+    margin-right: 25px;
+    transition: 0.3s;
+}
+
+.hero-socials a:hover {
+    color: var(--accent);
+}
+
+
+/* Education Section Styling */
+.timeline-wrapper {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-left: 40px;
+    /* Space for the line on left */
+}
+
+/* The Vertical Line */
+.vertical-line {
+    position: absolute;
+    left: 8px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(to bottom, #6366f1, #a855f7, #e2e8f0);
+    border-radius: 10px;
+}
+
+.edu-card-container {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+/* Timeline Dot/Marker */
+.timeline-marker {
+    position: absolute;
+    left: -39px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    border: 4px solid #6366f1;
+    border-radius: 50%;
+    z-index: 2;
+    box-shadow: 0 0 10px rgba(99, 102, 241, 0.4);
+}
+
+/* Card Styling */
+.edu-card {
+    background: #ffffff;
+    padding: 25px 35px;
+    border-radius: 20px;
+    border: 1px solid #f1f5f9;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+    transition: all 0.3s ease;
+}
+
+.edu-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 25px rgba(99, 102, 241, 0.1);
+    border-color: #6366f1;
+}
+
+.year-text {
+    color: #6366f1;
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+.cgpa-pill {
+    background: linear-gradient(90deg, #6366f1, #a855f7);
+    color: white;
+    padding: 8px 18px;
+    border-radius: 12px;
+    font-weight: 800;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+}
+
+.section-gap {
+    padding: 80px 0;
+}
+
+/* Image Area */
+.main-img {
+    border-radius: 40px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.badge-float {
+    position: absolute;
+    background: white;
+    padding: 15px 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.cert-badge {
+    top: 30px;
+    right: -20px;
+    border-right: 4px solid #a855f7;
+}
+
+.cgpa-badge {
+    bottom: 30px;
+    left: -20px;
+    border-left: 4px solid #6366f1;
+}
+
+/* About Matter */
+.label-pill {
+    background: rgba(99, 102, 241, 0.1);
+    color: var(--accent);
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.about-desc {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: #475569;
+    margin-top: 30px;
+}
+
+/* Cards Styling */
+.skill-card,
+.project-box,
+.edu-card {
+    background: white;
+    padding: 40px;
+    border-radius: 30px;
+    border: 1px solid #f1f5f9;
+    transition: 0.3s;
+}
+
+.skill-card i {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.purple-i {
+    color: #a855f7;
+}
+
+.blue-i {
+    color: #3b82f6;
+}
+
+.green-i {
+    color: #22c55e;
+}
+
+.orange-i {
+    color: #f97316;
+}
+
+.cyan-i {
+    color: #06b6d4;
+}
+
+.gold-i {
+    color: #eab308;
+}
+
+.tags span,
+.p-tags span {
+    background: #f8fafc;
+    padding: 5px 12px;
+    border-radius: 8px;
+    margin: 5px;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #64748b;
+}
+
+.cgpa-pill {
+    background: var(--accent-gradient);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-weight: 800;
+}
+
+/* Footer */
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.contact-card {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    border: 1px solid #f1f5f9;
+}
+
+.contact-card i {
+    font-size: 24px;
+    color: var(--accent);
+    margin-bottom: 10px;
+}
+
+.btn-message {
+    background: var(--accent-gradient);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+/* Project Section Enhancements */
+.project-wrapper {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+/* Delay for the second project to create a sequence */
+.project-wrapper:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.project-box {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 30px;
+    border: 1px solid #f1f5f9;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+}
+
+.project-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(99, 102, 241, 0.1);
+    border-color: #6366f1;
+}
+
+.project-content h3 {
+    color: #1e293b;
+    font-size: 1.75rem;
+}
+
+.p-tags span {
+    background: #f8fafc;
+    color: #6366f1;
+    padding: 8px 16px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    margin-right: 10px;
+    border: 1px solid #e2e8f0;
+}
+
+/* Floating link icon style */
+.view-link {
+    width: 60px;
+    height: 60px;
+    background: #6366f1;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.view-link:hover {
+    background: #4f46e5;
+    transform: rotate(45deg);
+    color: white;
+}
+
+.section-gap {
+    padding: 100px 0;
+}
+
+
+/* Skills Section Animations */
+.skill-wrapper {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: skillFadeIn 0.6s ease forwards;
+}
+
+/* Staggered Delay (ప్రతి కార్డ్ కొంచెం లేట్ గా వస్తుంది) */
+.skill-wrapper:nth-child(1) { animation-delay: 0.1s; }
+.skill-wrapper:nth-child(2) { animation-delay: 0.2s; }
+.skill-wrapper:nth-child(3) { animation-delay: 0.3s; }
+.skill-wrapper:nth-child(4) { animation-delay: 0.4s; }
+.skill-wrapper:nth-child(5) { animation-delay: 0.5s; }
+.skill-wrapper:nth-child(6) { animation-delay: 0.6s; }
+
+@keyframes skillFadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.skill-card {
+    background: #ffffff;
+    padding: 35px 25px;
+    border-radius: 25px;
+    border: 1px solid #f1f5f9;
+    text-align: center;
+    height: 100%;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(99, 102, 241, 0.12);
+    border-color: #6366f1;
+}
+
+/* Icon Background Effect */
+.skill-icon-bg {
+    width: 70px;
+    height: 70px;
+    background: #f8fafc;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 32px;
+    transition: 0.3s;
+}
+
+.skill-card:hover .skill-icon-bg {
+    background: #6366f1;
+}
+
+.skill-card:hover .skill-icon-bg i {
+    color: #ffffff !important; /* Hover చేసినప్పుడు ఐకాన్ వైట్ అవుతుంది */
+}
+
+.skill-card h5 {
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 15px;
+}
+
+.tags span {
+    background: #f1f5f9;
+    color: #475569;
+    padding: 5px 12px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 4px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.skill-card:hover .tags span {
+    background: rgba(99, 102, 241, 0.1);
+    color: #6366f1;
+}
